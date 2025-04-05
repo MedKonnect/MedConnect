@@ -18,7 +18,7 @@ const Button = ({
   disabled,
   ...props
 }: ButtonProps) => {
-  const baseStyles = 'font-medium w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const baseStyles = 'font-medium cursor-pointer w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2'
   
   const variants = {
     primary: 'border border-2 border-white text-white hover: rounded-[30px] focus:ring-blue-500',
