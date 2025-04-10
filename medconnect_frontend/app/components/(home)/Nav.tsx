@@ -20,7 +20,7 @@ const Nav = () => {
                 ))
             }
         </ul>
-        <Button>Sign up</Button>
+        <Button variant='primary'>Sign up</Button>
     </nav>
   )
 }
