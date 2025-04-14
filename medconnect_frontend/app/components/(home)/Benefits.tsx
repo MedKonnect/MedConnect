@@ -36,9 +36,9 @@ const Benefits = () => {
          <div className="max-w-6xl w-full mx-auto py-5">
             {
                 benefits.map(b => (
-                    <div key={b.title} className="flex gap-y-4 bg-[#F9FEFF] pr-8 rounded-4xl justify-between my-16 min-w-full">
-                        <Image src={b.img} alt={b.title} width={500} height={500} className="w-[500px] h-[500px] relative z-[2] object-cover rounded-[20px]" />
-                        <div className="py-12 w-[500px]">
+                    <div key={b.title} className="flex flex-col lg:flex-row gap-y-4 bg-[#F9FEFF] px-4 lg:pr-8 rounded-4xl justify-between my-16 min-w-full">
+                        <Image src={b.img} alt={b.title} width={500} height={500} className="w-full lg:w-[500px] h-[500px] relative z-[2] object-cover rounded-[20px]" />
+                        <div className="py-6 md:px-6 xl:px-0 lg:py-12 lg:w-[500px]">
                             <h3 className="mb-4 opacity-80 text-black tracking-[3%] font-semibold text-[32px]">{b.title}</h3>
                             <p className="opacity-60 leading-[2] text-lg">{b.desc}</p>
                         </div>

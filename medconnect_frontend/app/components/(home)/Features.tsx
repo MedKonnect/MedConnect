@@ -23,7 +23,7 @@ const Features = () => {
     <section className="max-w-screen-2xl bg-[#EDFCFF] py-16 mx-auto mt-12 px-4 lg:px-12">
         <h2 className="text-center opacity-60 font-semibold tracking-wide mb-3">Features</h2>
         <p className="text-[32px] text-center max-w-[35ch] leading-[1] mx-auto">We bring healthcare home, where you need it the most</p>
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 mt-16">
+        <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-x-4 xl:gap-8 mt-16">
             {
                 features.map((feature, index) => (
                     <FeatureCard 
@@ -36,7 +36,7 @@ const Features = () => {
                 ))
             }
         </div>
-        <div className="flex justify-center"><button className="my-[100px] rounded-[30px] cursor-pointer px-20 py-5 border mx-auto tracking-wide font-semibold">Sign Up</button></div>
+        <div className="flex justify-center"><button className="my-5 lg:my-[100px] rounded-[30px] cursor-pointer px-20 py-5 border mx-auto tracking-wide font-semibold">Sign Up</button></div>
     </section>
   )
 }

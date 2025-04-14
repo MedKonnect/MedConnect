@@ -15,12 +15,12 @@ const Records = () => {
   return (
     <section
       ref={ref}
-      className="flex flex-col gap-y-20 bg-[#EDFCFF] justify-center w-full py-20 max-w-screen-2xl mx-auto items-center"
+      className="flex flex-col gap-y-20  lg:px-6 bg-[#EDFCFF] px-4 xl:px-0 z-10 justify-center overflow-hidden relative w-full py-20 xl:pb-[10rem] max-w-screen-2xl mx-auto items-center"
     >
-      <h3 className="text-[48px] w-[40ch] font-medium text-black opacity-80 text-center leading-[70px]">
+      <h3 className="text-2xl lg:text-[48px] xl:w-[40ch] font-medium text-black opacity-80 text-center lg:leading-[70px]">
         We put your health information back in your hands, giving you complete control over your healthcare journey.
       </h3>
-      <div className="flex max-w-6xl justify-between w-full">
+      <div className="flex flex-col lg:flex-row max-w-6xl justify-between gap-y-4 lg:gap-y-0 items-center lg:items-start w-full">
         {recordList.map((record, index) => (
           <Card
             key={index}
@@ -30,6 +30,7 @@ const Records = () => {
           />
         ))}
       </div>
+      <img src="/img/gradientcircle.png" alt="" className='absolute z-[-1] inset-0' />
     </section>
   );
 };
@@ -66,8 +67,8 @@ const Card = ({ value, description, isInView }: CardProps) => {
 
   return (
     <div className="flex flex-col items-center gap-y-4 justify-center">
-      <h4 className="text-6xl capitalize m-0">+{formatNumber(count)}</h4>
-      <p className="opacity-60 text-xl capitalize">{description}</p>
+      <h4 className="text-4xl lg:text-6xl capitalize m-0">+{formatNumber(count)}</h4>
+      <p className="opacity-60 lg:text-xl text-xs text-center capitalize lg:w-[235px]">{description}</p>
     </div>
   );
 };

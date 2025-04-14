@@ -9,7 +9,7 @@ const Hero = () => {
             <Nav/>
             <div className='flex flex-col xl:w-[60ch] gap-y-5 pb-6 justify-start'>
                 <div className=''>
-                    <h1 className='text-[62px] font-medium leading-[80px]'>
+                    <h1 className='text-[50px] leading-[1.1] lg:text-[62px] font-medium lg:leading-[80px]'>
                         Be The Center of your Health Journey
                     </h1>
                 </div>
